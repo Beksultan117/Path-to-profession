@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "text": "What do you enjoy doing most after school?",
+      "options": [
+        "Drawing or making crafts",
+        "Playing sports or running around",
+        "Reading books or solving puzzles",
+        "Helping others or taking care of pets"
+      ],
+      "traits": ["creative", "active", "analytical", "caring"]
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "text": "If you could be any animal, which would you choose?",
+      "options": [
+        "Dolphin (love water and friends)",
+        "Eagle (like seeing everything from above)",
+        "Ant (good at working in teams)",
+        "Owl (enjoy learning new things)"
+      ],
+      "traits": ["social", "observant", "teamwork", "intellectual"]
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "text": "Your favorite school subject is:",
+      "options": [
+        "Art and Music",
+        "Math and Science",
+        "Sports",
+        "Reading and Writing"
+      ],
+      "traits": ["artistic", "logical", "athletic", "verbal"]
+    },
+    {
+      "id": 4,
+      "type": "multiple_choice",
+      "text": "When playing with friends, you usually:",
+      "options": [
+        "Come up with new games",
+        "Make sure everyone follows the rules",
+        "Help solve arguments",
+        "Watch and join when comfortable"
+      ],
+      "traits": ["innovative", "organized", "diplomatic", "cautious"]
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "text": "Your favorite toys/games are:",
+      "options": [
+        "Building blocks or LEGO",
+        "Dolls or action figures",
+        "Board games or puzzles",
+        "Art supplies or musical instruments"
+      ],
+      "traits": ["constructive", "imaginative", "strategic", "expressive"]
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "text": "When something is difficult, you:",
+      "options": [
+        "Ask for help right away",
+        "Keep trying until you figure it out",
+        "Try a different way",
+        "Take a break and come back later"
+      ],
+      "traits": ["collaborative", "persistent", "adaptive", "reflective"]
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "text": "Your dream superpower would be:",
+      "options": [
+        "Flying",
+        "Super strength",
+        "Talking to animals",
+        "Knowing everything"
+      ],
+      "traits": ["adventurous", "powerful", "empathetic", "knowledgeable"]
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "text": "On weekends you prefer to:",
+      "options": [
+        "Go on adventures outside",
+        "Have quiet time at home",
+        "Be with lots of friends",
+        "Make something new"
+      ],
+      "traits": ["explorer", "introspective", "gregarious", "inventive"]
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "text": "Your favorite TV characters are usually:",
+      "options": [
+        "Brave heroes",
+        "Smart problem-solvers",
+        "Funny friends",
+        "Creative artists"
+      ],
+      "traits": ["courageous", "clever", "humorous", "visionary"]
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "text": "When you grow up, you'd like to:",
+      "options": [
+        "Help people (doctor, teacher)",
+        "Build or invent things",
+        "Do something artistic",
+        "Work with animals"
+      ],
+      "traits": ["compassionate", "innovative", "artistic", "nature-loving"]
+    }
+  ]
+}

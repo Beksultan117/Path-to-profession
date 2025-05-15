@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerPath Mentor - Find Your Perfect Profession</title>
+    <link rel="stylesheet" href="styless1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">CareerPath</div>
+        <ul class="navicons">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#mentors">Mentors</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+        <div class="regis">
+            <a href="#" id="signInLink">Sign In</a>
+            <a href="#" class="btn" id="startTestBtn">Start Free Test</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Perfect Career</h1>
+            <p>Take our professional personality assessment and find your ideal career path with expert mentorship</p>
+        </div>
+    </section>
+
+    <!-- Mentors Section -->
+    <section id="mentors" class="mentors-section">
+        <div class="section-header">
+            <h2>Our Expert Mentors</h2>
+            <p>Learn from industry professionals who will guide you on your career journey</p>
+        </div>
+
+        <div class="mentors-container">
+            <div class="mentor-card">
+                <div class="mentor-photo">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mentor">
+                </div>
+                <h3>Alex Johnson</h3>
+                <p class="mentor-title">Tech Leadership Expert</p>
+                <p class="mentor-bio">15+ years in technology leadership roles at major tech companies. Specializes in guiding career transitions into tech management.</p>
+                <div class="mentor-achievements">
+                    <span>CTO at TechGiant</span>
+                    <span>Author of "Tech Leadership 101"</span>
+                </div>
+            </div>
+
+            <div class="mentor-card">
+                <div class="mentor-photo">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Mentor">
+                </div>
+                <h3>Sarah Williams</h3>
+                <p class="mentor-title">Creative Design Specialist</p>
+                <p class="mentor-bio">Award-winning designer with experience across multiple industries. Helps creative professionals find their unique path.</p>
+                <div class="mentor-achievements">
+                    <span>Design Lead at CreativeStudio</span>
+                    <span>5x Design Award Winner</span>
+                </div>
+            </div>
+
+            <div class="mentor-card">
+                <div class="mentor-photo">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Mentor">
+                </div>
+                <h3>Michael Chen</h3>
+                <p class="mentor-title">Finance & Analytics Expert</p>
+                <p class="mentor-bio">Former financial analyst turned career advisor. Helps professionals leverage their analytical skills across various industries.</p>
+                <div class="mentor-achievements">
+                    <span>Financial Director at GlobalBank</span>
+                    <span>MBA, Financial Analytics</span>
+                </div>
+            </div>
+
+            <div class="mentor-card">
+                <div class="mentor-photo">
+                    <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Mentor">
+                </div>
+                <h3>Jessica Parker</h3>
+                <p class="mentor-title">Healthcare Career Specialist</p>
+                <p class="mentor-bio">Dedicated to helping individuals find their path in healthcare, from clinical roles to administration and research.</p>
+                <div class="mentor-achievements">
+                    <span>Healthcare Administrator</span>
+                    <span>PhD in Health Sciences</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-header">
+            <h2>Select Your Plan</h2>
+            <p>Choose the right plan to begin your career transformation journey</p>
+        </div>
+
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Basic Plan</h3>
+                    <div class="price">$19<span>/month</span></div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Career Personality Test</li>
+                    <li><i class="fas fa-check"></i> Basic Profession Recommendations</li>
+                    <li><i class="fas fa-check"></i> Limited Video Lessons</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Mentor Access</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Career Planning Tools</li>
+                </ul>
+                <a href="payment.html?plan=basic" class="pricing-btn" id="basicBtn" target="_blank">Register Now</a>
+            </div>
+
+            <div class="pricing-card recommended">
+                <div class="pricing-tag">Recommended</div>
+                <div class="pricing-header">
+                    <h3>Standard Plan</h3>
+                    <div class="price">$39<span>/month</span></div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Career Personality Test</li>
+                    <li><i class="fas fa-check"></i> Advanced Profession Analysis</li>
+                    <li><i class="fas fa-check"></i> Full Library of Video Lessons</li>
+                    <li><i class="fas fa-check"></i> Limited Mentor Sessions</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Career Planning Tools</li>
+                </ul>
+                <a href="payment.html?plan=standard" class="pricing-btn highlighted" id="standardBtn" target="_blank">Register Now</a>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Premium Plan</h3>
+                    <div class="price">$79<span>/month</span></div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Career Personality Test</li>
+                    <li><i class="fas fa-check"></i> Advanced Profession Analysis</li>
+                    <li><i class="fas fa-check"></i> Full Library of Video Lessons</li>
+                    <li><i class="fas fa-check"></i> Unlimited Mentor Sessions</li>
+                    <li><i class="fas fa-check"></i> Advanced Career Planning Tools</li>
+                </ul>
+                <a href="payment.html?plan=premium" class="pricing-btn" id="premiumBtn" target="_blank">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="contacts-section">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Have questions? Our team is here to help you</p>
+        </div>
+
+        <div class="contacts-container">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Bekultan Zhumabayev</h3>
+                <p>Career Development Advisor</p>
+                <a href="tel:+77051234567">+7 705 123 4567</a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Nurlan Saburov</h3>
+                <p>Profession Assessment Specialist</p>
+                <a href="tel:+77071234567">+7 707 123 4567</a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>For general inquiries</p>
+                <a href="mailto:info@careerpathmentor.com">info@careerpathmentor.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Signup Modal -->
+    <section class="imp">
+      <section class="auth-container">
+        <button class="close-auth">&times;</button>
+
+        <!-- Login Form -->
+        <div class="login-form active" id="loginForm">
+          <div class="head">
+            <h1>Welcome Back!</h1>
+            <p>Sign in to continue your career journey.</p>
+          </div>
+          <form action="">
+            <div class="input-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="sign_in_btn">Sign In</button>
+          </form>
+          <button class="forgot">Forgot Password?</button>
+
+          <div class="auth-divider">
+            <span class="divider-text">Or</span>
+            <button class="auth-switch-btn" id="showSignupBtn">Sign up</button>
+          </div>
+
+          <div class="social-login">
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-google"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="signup-form" id="signupForm">
+          <div class="head">
+            <h1>Create Account</h1>
+            <p>Join us and discover your ideal career path.</p>
+          </div>
+          <form action="">
+            <div class="input-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+              <label for="signup-email">Email Address</label>
+              <input type="email" id="signup-email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+              <label for="newpassword">Password</label>
+              <input type="password" id="newpassword" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone Number (Optional)</label>
+              <input type="tel" id="phone" placeholder="Phone Number (Optional)">
+            </div>
+            <button type="submit" class="sign_up_btn">Sign Up</button>
+          </form>
+
+          <div class="auth-divider">
+            <span class="divider-text">Already have an account?</span>
+            <button class="auth-switch-btn" id="showLoginBtn">Sign In</button>
+          </div>
+
+          <div class="social-login">
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-google"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Dashboard section -->
+    <div class="dashboard" style="display: none;">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h2>CareerPath Mentor</h2>
+        </div>
+        <ul>
+          <li><button id="profileBtn"><i class="fas fa-user"></i> Profile</button></li>
+          <li><button id="testBtn"><i class="fas fa-tasks"></i> Personality Test</button></li>
+          <li><button id="professionsBtn"><i class="fas fa-briefcase"></i> Professions</button></li>
+          <li><button id="videosBtn"><i class="fas fa-video"></i> Video Lessons</button></li>
+          <li><button id="gamesBtn"><i class="fas fa-gamepad"></i> Learning Games</button></li>
+          <li><button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Log Out</button></li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <!-- Profile Section -->
+        <section id="profileSection" class="section">
+          <h2>Your Profile</h2>
+          <div id="profile-info">
+            <!-- Profile information will be filled by JavaScript -->
+          </div>
+        </section>
+        
+        <!-- Professions Section -->
+        <section id="professionsSection" class="section" style="display:none;">
+          <h2>Explore Professions</h2>
+          <div class="profession-search-container">
+            <div class="search-bar">
+              <input type="text" id="profession-search" placeholder="Enter a profession name...">
+              <button id="search-profession-btn" class="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <p class="search-tip">Example searches: Software Engineer, Nurse, Architect, Teacher</p>
+          </div>
+          
+          <div id="profession-result">
+            <!-- Search results will appear here -->
+            <div class="initial-search-message">
+              <i class="fas fa-briefcase search-icon"></i>
+              <h3>Search for a Profession</h3>
+              <p>Enter a profession above to get detailed information about career paths, skills required, education, and job outlook.</p>
+            </div>
+          </div>
+          
+          <div class="divider-text">OR</div>
+          
+          <h3 class="sub-heading">Browse Common Professions</h3>
+          <div id="professions-container">
+            <!-- Professions will be filled by JavaScript -->
+          </div>
+        </section>
+        
+        <!-- Test Section -->
+        <section id="testSection" class="section" style="display:none;">
+          <h2>Career Personality Test</h2>
+          <div id="test-container">
+            <div id="question-container"></div>
+            <div id="options-container"></div>
+            
+            <!-- Navigation buttons -->
+            <div class="test-nav-buttons">
+              <button id="back-btn" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button>
+              <button id="next-btn">Next <i class="fas fa-arrow-right"></i></button>
+              <button id="finish-btn" style="display:none;">Complete Test</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section id="videosSection" class="section" style="display:none;">
+          <h2>Video Lessons</h2>
+          <div class="videos-filter">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="career">Career Planning</button>
+            <button class="filter-btn" data-category="skills">Skill Development</button>
+            <button class="filter-btn" data-category="interview">Interview Prep</button>
+          </div>
+          <div class="videos-container">
+            <div class="video-card" data-category="career">
+              <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/eRJVHbXJG3U" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <h3>How to Choose the Right Career Path</h3>
+              <p>Learn the key factors to consider when selecting your career path.</p>
+            </div>
+            <div class="video-card" data-category="skills">
+              <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/3aA6_gJawqE" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <h3>Essential Skills for the Modern Workplace</h3>
+              <p>Discover the skills every professional needs in today's job market.</p>
+            </div>
+            <div class="video-card" data-category="interview">
+              <div class="video-thumbnail">
+                <iframe src="https://www.youtube.com/embed/HG68Ymazo18" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <h3>Ace Your Job Interview</h3>
+              <p>Expert techniques to prepare for and excel in job interviews.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Games Section -->
+        <section id="gamesSection" class="section" style="display:none;">
+          <h2>Career Learning Games</h2>
+          <div class="games-container">
+            <div class="game-card">
+              <div class="game-icon">
+                <i class="fas fa-puzzle-piece"></i>
+              </div>
+              <h3>Career Paths Puzzle</h3>
+              <p>Learn about different career paths while solving engaging puzzles.</p>
+              <button class="game-btn">Play Game</button>
+            </div>
+            <div class="game-card">
+              <div class="game-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Skill Match Challenge</h3>
+              <p>Match skills to professions in this fast-paced memory game.</p>
+              <button class="game-btn">Play Game</button>
+            </div>
+            <div class="game-card">
+              <div class="game-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Career Trivia</h3>
+              <p>Test your knowledge about different professions and career paths.</p>
+              <button class="game-btn">Play Game</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>CareerPath </h3>
+          <p>Your path to professional success</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Platform</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#mentors">Mentors</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Career Blog</a></li>
+              <li><a href="#">Success Stories</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Guides</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CareerPath Mentor. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="auth1.js"></script>
+    <script src="login1.js"></script>
+    <script src="analyzer1.js"></script>
+    <script src="Api.js"></script>
+    <script src="search.js"></script>
+    <script src="test1.js"></script>
+    <script src="app1.js"></script>
+    
+  </body>
+</html>

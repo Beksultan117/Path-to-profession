@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - CareerPath Mentor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .payment-page {
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .payment-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .payment-header h1 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .payment-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow-md);
+            padding: 2rem;
+        }
+        
+        .plan-details {
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            background-color: var(--gray-50);
+        }
+        
+        .plan-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        .plan-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 1rem;
+        }
+        
+        .price-details {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+        }
+        
+        .payment-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--gray-700);
+        }
+        
+        .payment-form input,
+        .payment-form select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--gray-300);
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            flex: 1;
+        }
+        
+        .card-icons {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .card-icon {
+            font-size: 1.5rem;
+            color: var(--gray-500);
+        }
+        
+        .pay-button {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .pay-button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .back-link {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        
+        .back-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .payment-container {
+                padding: 1.5rem;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-page">
+        <div class="payment-header">
+            <h1>CareerPath Mentor</h1>
+            <p>Complete your subscription</p>
+        </div>
+        
+        <div class="payment-container">
+            <div class="plan-details">
+                <div class="plan-name" id="plan-name">Standard Plan</div>
+                <div class="plan-price" id="plan-price">$39<span>/month</span></div>
+                <div class="price-details">Your subscription will start immediately after payment</div>
+            </div>
+            
+            <form class="payment-form" id="payment-form">
+                <h2>Payment Details</h2>
+                
+                <div class="card-icons">
+                    <i class="fab fa-cc-visa card-icon"></i>
+                    <i class="fab fa-cc-mastercard card-icon"></i>
+                    <i class="fab fa-cc-amex card-icon"></i>
+                    <i class="fab fa-cc-discover card-icon"></i>
+                </div>
+                
+                <label for="card-name">Name on Card</label>
+                <input type="text" id="card-name" placeholder="John Smith" required>
+                
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required maxlength="19">
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" placeholder="MM/YY" required maxlength="5">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cvc">CVC</label>
+                        <input type="text" id="cvc" placeholder="123" required maxlength="4">
+                    </div>
+                </div>
+                
+                <button type="submit" class="pay-button" id="pay-button">
+                    <span id="payment-button-text">Pay $39.00</span>
+                </button>
+            </form>
+            
+            <div class="back-link">
+                <a href="index.html">← Return to Home Page</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the plan name from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const plan = urlParams.get('plan');
+        let planPrice = '$39.00';
+        
+        // Set correct plan details based on URL parameter
+        if (plan === 'basic') {
+            document.getElementById('plan-name').textContent = 'Basic Plan';
+            document.getElementById('plan-price').innerHTML = '$19<span>/month</span>';
+            planPrice = '$19.00';
+        } else if (plan === 'premium') {
+            document.getElementById('plan-name').textContent = 'Premium Plan';
+            document.getElementById('plan-price').innerHTML = '$79<span>/month</span>';
+            planPrice = '$79.00';
+        }
+        
+        // Update payment button text
+        document.getElementById('payment-button-text').textContent = `Pay ${planPrice}`;
+        
+        // Format card number input (add spaces)
+        document.getElementById('card-number').addEventListener('input', function(e) {
+            const value = e.target.value.replace(/\s+/g, '').replace(/[^0-9]/gi, '');
+            const formattedValue = value.replace(/\d{4}(?=.)/g, '$& ');
+            e.target.value = formattedValue;
+        });
+        
+        // Format expiry date input
+        document.getElementById('expiry-date').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/[^0-9]/g, '');
+            
+            if (value.length > 2) {
+                value = value.substring(0, 2) + '/' + value.substring(2, 4);
+            }
+            
+            e.target.value = value;
+        });
+        
+        // Simulate payment processing
+        document.getElementById('payment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const cardName = document.getElementById('card-name').value;
+            const cardNumber = document.getElementById('card-number').value;
+            const expiryDate = document.getElementById('expiry-date').value;
+            const cvc = document.getElementById('cvc').value;
+            
+            // Basic validation
+            if (!cardName || !cardNumber || !expiryDate || !cvc) {
+                alert('Please fill out all payment fields');
+                return;
+            }
+            
+            // Simulate payment processing
+            const payButton = document.getElementById('pay-button');
+            payButton.disabled = true;
+            payButton.textContent = 'Processing...';
+            
+            // Simulate API call delay
+            setTimeout(() => {
+                // Show success message
+                alert('Payment successful! Your subscription is now active.');
+                
+                // Redirect back to main page
+                window.location.href = 'index.html';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

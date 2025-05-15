@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Artist/Designer",
+    "traits": ["creative", "artistic", "expressive", "visionary"],
+    "description": "Creates visual art, designs products, or produces media content."
+  },
+  {
+    "title": "Engineer",
+    "traits": ["analytical", "logical", "constructive", "innovative"],
+    "description": "Designs and builds systems, structures, or machines."
+  },
+  {
+    "title": "Teacher",
+    "traits": ["caring", "verbal", "knowledgeable", "compassionate"],
+    "description": "Educates and mentors students of all ages."
+  },
+  {
+    "title": "Athlete/Sports Coach",
+    "traits": ["active", "athletic", "persistent", "teamwork"],
+    "description": "Competes in sports or trains others in athletic skills."
+  },
+  {
+    "title": "Scientist",
+    "traits": ["analytical", "intellectual", "observant", "knowledgeable"],
+    "description": "Conducts research and experiments to advance knowledge."
+  },
+  {
+    "title": "Doctor/Nurse",
+    "traits": ["caring", "compassionate", "collaborative", "persistent"],
+    "description": "Provides medical care and promotes health."
+  },
+  {
+    "title": "Entrepreneur",
+    "traits": ["innovative", "adaptive", "powerful", "courageous"],
+    "description": "Starts and manages new business ventures."
+  },
+  {
+    "title": "Veterinarian",
+    "traits": ["nature-loving", "caring", "empathetic", "observant"],
+    "description": "Provides medical care for animals."
+  },
+  {
+    "title": "Writer",
+    "traits": ["verbal", "expressive", "imaginative", "introspective"],
+    "description": "Creates written content across various genres."
+  },
+  {
+    "title": "Social Worker",
+    "traits": ["compassionate", "diplomatic", "collaborative", "caring"],
+    "description": "Helps individuals and communities overcome challenges."
+  }
+]
